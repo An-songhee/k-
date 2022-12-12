@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script>
+    function change() {
+      var span = document.getElementById("mySpan");
+      span.style.color = "red"; 
+      span.style.fontSize = "30px"; 
+      span.style.display = "block"; 
+      span.style.width = "12em"; 
+      span.style.border = "3px dotted black";
+      span.style.margin = "0px"; 
+    }
+  </script>
+
+<style>
+
+span {
+      transition: font-size 5s;
+    }
+
+    span:hover {
+      font-size: 500%;
+    }
+
+body { 
+	background-color :rgb(233, 227, 227); 
+	color : brown;
+	margin-left : 30px;
+	margin-right : 30px;
+}
+
+
+h2 { 
+  background-color: yellow;
+	color :brown(136, 28, 236);
+  font-size: 20px;
+}
+
+
+summary { color : red; font-size : 17px; }
+</style>
+</head>
+<body>
+<h1>
+  <span id="mySpan" style="color:red">연도별 한류 현황</span>
+  <input type="button" value="2013_~" onclick="change()">
+</h1>
+<hr>
+<h2>해당 연도를 클릭하면 현황을 알 수 있습니다.</h2>
+<hr>
+</body>
+<details>
+  <summary onmouseover="this.style.backgroundColor='skyblue'" onmouseout="this.style.backgroundColor='white'">
+    2013-2015</summary>
+  
+  <p id="exo" style="color:black"> -K-POP그룹 EXO 중국 대성공</p>
+<p id="별그대" style="color:black">-드라마 '별에서 온 그대'로 성공으로 인한 중국에서의 치맥 열풍</p>
+  <img
+    src="https://image.ajunews.com/content/image/2014/03/02/20140302162524822233.jpg"
+    width="300" height="200" alt="별에서온그대">
+    <ul>
+      <li><a href="https://youtu.be/7-78gh5iQXw">인기 중국 방송 최강대뇌 김수현 출연</a></li>
+    </ul>
+</details>
+
+<details>
+<summary onmouseover="this.style.backgroundColor='skyblue'" onmouseout="this.style.backgroundColor='white'">
+  2016-2018
+</summary>
+  <p id="twice" style="color:black">-K-POP그룹 TWICE 일본 대성공으로 인한 티티 포즈 유행</p>
+  <ul>
+    <li><a href="https://youtu.be/clNvi6su6sM">일본 연말 홍백가합전 프로 출연</a></li>
+  </ul>
+  <p id="bts" style="color:black">-K-POP그룹 방탄소년단 세계적 대성공. 미국 시상식 AMA 공연 진행</p>
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F469%2F2017%2F11%2F20%2F0000254234_001_20171121050039143.jpg&type=sc960_832" width="300" height="200" alt="BTS">
+  <ul>
+    <li><a href="https://youtu.be/rH1PVvFj8cE">AMA 방탄소년단 공연</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary onmouseover="this.style.backgroundColor='skyblue'" onmouseout="this.style.backgroundColor='white'">
+    2019-2021
+  </summary>
+  
+    <p id="drama" style="color:black">-넷플릭스에서 방영된 드라마 '사랑의 불시착' , '이태원 클라쓰' 일본 흥행</p>
+    <ul><li><a href="https://youtu.be/ADDRXt5mgl8"> 인기에 리메이크된 일본 '롯폰기 클라쓰'</a></li></ul>
+  
+  <p id="parasite" style="color:black">-영화 '기생충' 오스카 4관왕 기록</p>
+  <img
+    src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5184%2F2020%2F02%2F10%2F0000238837_001_20200210223657250.jpg&type=sc960_832"
+    width="300" height="200" alt="기생충">
+    <table border="1">
+      <thead>
+        <tr>
+    
+          <th>성적</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>'칸 영화제' 황금 종려상 수상</td>
+        </tr>
+        <tr>
+          <td>북미 박스오피스 4위 기록</td>
+        </tr>
+        <tr>
+          <td>아카데미 시상식 4관왕</td>
+        </tr>
+        <tr>
+          <td>2019 월드와이드 박스오피스 31위</td>
+        </tr>
+      </tbody>
+    </table>
+  <p id="squid" style="color:black">-드라마 '오징어 게임'을 통해 넷플릭스 주가 최고치 기록</p>
+  <p id="balckpink" style="color:black">-K-POP그룹 블랙핑크 태국 주요 광고 모델 발탁</p>
+  <ul>
+    <li><a href="https://youtu.be/w3cyqfuaYUo">태국 KBank 광고</a></li>
+  </ul></ul>
+
+</details>
+
+<details>
+  <summary onmouseover="this.style.backgroundColor='skyblue'" onmouseout="this.style.backgroundColor='white'">
+  2022 ing
+  </summary>
+  <p id="worldcup" style="color:black">-카타르 월드컵 주제가 'Dreamers' 방탄소년단 멤버 정국 참여</p>
+  <ul>
+    <li><a href="https://youtu.be/IwzkfMmNMpM"> Dreamers 뮤비</a></li>
+  </ul>
+  <p id="우영우" style="color:black">-드라마 '이상한 변호사 우영우' 넷플릭스 비영어권 드라마 시청시간 1위 기록</p>
+  <p id="우영우" style="color:black">-주연 배우 '박은빈'의 태국 팬미팅 개최</p>
+  <img
+    src="https://www.etoland.co.kr/data/daumeditor10/221111/thumbnail3/32898316681503450.jpg"
+    width="300" height="200" alt="우영우">
+  <p id="kcon" style="color:black">-K-POP그룹이 참여하는 콘서트 K-CON이 LA, 일본, 사우디아라비아에서 개최</p>
+  <ul>
+    <li><a href="https://youtu.be/Fr_y5yo9NIc">K-CON LA</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://youtu.be/iMqXW6lSvB4">K-CON 사우디아라비아</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://youtu.be/JYEY3hspWgY">K-CON 일본</a></li>
+  </ul>
+  
+</details>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+
+
+
+
+
